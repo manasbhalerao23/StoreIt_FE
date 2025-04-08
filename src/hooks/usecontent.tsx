@@ -5,7 +5,7 @@ export function usecontents(){
     const [contents, setcontents] = useState<any[]>([]);
 
     useEffect(() => {
-        axios.get(`${import.meta.env.BACKEND_URL}/api/v1/content`,{
+        axios.get(`${import.meta.env.BASE_URL}/api/v1/content`,{
             headers: {
                 "Authorization": localStorage.getItem("token")
             }

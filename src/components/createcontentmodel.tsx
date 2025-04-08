@@ -253,7 +253,7 @@ function CreateContentModel() {
   const onSubmit: SubmitHandler<Inputdata> = async (data) => {
     try {
       await axios.post(
-        `${import.meta.env.BACKEND_URL}/api/v1/content`,
+        `${import.meta.env.BASE_URL}/api/v1/content`,
         {
           title: data.title,
           link: data.link,
