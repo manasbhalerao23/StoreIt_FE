@@ -21,7 +21,7 @@ export const contentAtom = atomFamily({
             }
             else{
                 //check point for hitting BE
-                const response = await axios.get(`${import.meta.env.VITE_API_URL}api/v1/brain/${id}`,
+                const response = await axios.get(`${import.meta.env.VITE_API_URL}/api/v1/brain/${id}`,
                     // {
                     //     withCredentials: true
                     // }
