@@ -1,6 +1,5 @@
 import axios from "axios";
 import { atom, atomFamily, selectorFamily } from "recoil";
-import { BACKEND_URL } from "../config";
 import { contentdata } from "../types";
 
 export const contentAtom = atomFamily({
@@ -13,7 +12,7 @@ export const contentAtom = atomFamily({
         key:"contentselector",
         get: (id :string | null) => async() => {
             if(!id){
-                const response = await axios.get(`${BACKEND_URL}/api/v1/content`,
+                const response = await axios.get(`${import.meta.env.BACKEND_URL}/api/v1/content`,
                     {
                         withCredentials: true
                     }
@@ -22,7 +21,7 @@ export const contentAtom = atomFamily({
             }
             else{
                 //check point for hitting BE
-                const response = await axios.post(`${BACKEND_URL}/brain/${id}`,
+                const response = await axios.post(`${import.meta.env.BACKEND_URL}/brain/${id}`,
                     // {
                     //     withCredentials: true
                     // }
