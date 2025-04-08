@@ -27,7 +27,10 @@ export const contentAtom = atomFamily({
                     // }
                 );
                 console.log("fetched",response.data);
-                return response.data;
+                return {
+                    contents: response.data.content, 
+                    username: "Shared User", 
+                  };
             }
         },
     }),
