@@ -18,7 +18,7 @@ const Card = memo(
 
         async function handledelete () {
             try{
-                await axios.delete(`${import.meta.env.BASE_URL}/api/v1/content`,
+                await axios.delete(`${import.meta.env.VITE_API_URL}/api/v1/content`,
                     {
                         data:{
                             id: content.id,

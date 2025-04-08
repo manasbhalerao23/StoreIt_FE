@@ -19,7 +19,7 @@ function SideBar({ isvisible, setisvisible }: { isvisible: boolean; setisvisible
 
     async function handleLogout() {
         try {
-            axios.post(`${import.meta.env.BASE_URL}/logout`);
+            axios.post(`${import.meta.env.VITE_API_URL}/logout`);
             localStorage.removeItem("isblogin");
             navigate('/');
         } catch (e) {

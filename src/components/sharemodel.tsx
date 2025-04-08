@@ -10,7 +10,7 @@ function ShareModel() {
     async function handleCopyLink() {
         try {
             const response = await axios.post(
-                `${import.meta.env.BASE_URL}/api/v1/brain/share`,
+                `${import.meta.env.VITE_API_URL}/api/v1/brain/share`,
                 { share: true },
                 { withCredentials: true }
             );

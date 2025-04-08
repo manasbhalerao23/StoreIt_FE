@@ -23,9 +23,9 @@ function AuthForm({ endpoint }: AuthFormProps) {
 
   const onSubmit: SubmitHandler<FormData> = async (data) => {
     try {
-      console.log(import.meta.env.BASE_URL)
+      console.log(import.meta.env.VITE_API_URL)
       await axios.post(
-        `${import.meta.env.BASE_URL}/api/v1/${endpoint}`,
+        `${import.meta.env.VITE_API_URL}/api/v1/${endpoint}`,
         { username: data.username, password: data.password },
         { withCredentials: true }
       );
