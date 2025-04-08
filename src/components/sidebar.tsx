@@ -1,7 +1,6 @@
 import axios from "axios";
 import { AlignJustify, Clapperboard, FileText, Image, Layers, Link2, LogOut, Twitter } from "lucide-react";
 import { Link, useNavigate } from "react-router-dom";
-import { BACKEND_URL } from "../config";
 import { ReactElement } from "react";
 import { useRecoilState } from "recoil";
 import { currentTabAtom } from "../atoms/contentAtom";
@@ -20,7 +19,7 @@ function SideBar({ isvisible, setisvisible }: { isvisible: boolean; setisvisible
 
     async function handleLogout() {
         try {
-            axios.post(`${BACKEND_URL}/logout`);
+            axios.post(`${import.meta.env.BACKEND_URL}/logout`);
             localStorage.removeItem("isblogin");
             navigate('/');
         } catch (e) {

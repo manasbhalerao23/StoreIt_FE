@@ -1,6 +1,5 @@
 import axios from "axios";
 import { useState } from "react";
-import { BACKEND_URL } from "../config";
 import { CircleX, Copy, Share2 } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -11,7 +10,7 @@ function ShareModel() {
     async function handleCopyLink() {
         try {
             const response = await axios.post(
-                `${BACKEND_URL}/api/v1/brain/share`,
+                `${import.meta.env.BACKEND_URL}/api/v1/brain/share`,
                 { share: true },
                 { withCredentials: true }
             );

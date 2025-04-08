@@ -1,7 +1,6 @@
 import { memo, useEffect } from "react";
 import { contentdata } from "../types";
 import axios from "axios";
-import { BACKEND_URL } from "../config";
 import { Clapperboard, FileText, Image, Link2, Trash, Twitter } from "lucide-react";
 
 const Card = memo(
@@ -19,7 +18,7 @@ const Card = memo(
 
         async function handledelete () {
             try{
-                await axios.delete(`${BACKEND_URL}/api/v1/content`,
+                await axios.delete(`${import.meta.env.BACKEND_URL}/api/v1/content`,
                     {
                         data:{
                             id: content.id,

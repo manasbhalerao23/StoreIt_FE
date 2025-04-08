@@ -225,7 +225,6 @@
 import axios, { AxiosError } from "axios";
 import { ReactElement, useState } from "react";
 import { SubmitHandler, useForm, UseFormRegister } from "react-hook-form";
-import { BACKEND_URL } from "../config";
 import { CircleX, Clapperboard, FileText, Image, Link2, Plus, Twitter, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -254,7 +253,7 @@ function CreateContentModel() {
   const onSubmit: SubmitHandler<Inputdata> = async (data) => {
     try {
       await axios.post(
-        `${BACKEND_URL}/api/v1/content`,
+        `${import.meta.env.BACKEND_URL}/api/v1/content`,
         {
           title: data.title,
           link: data.link,
