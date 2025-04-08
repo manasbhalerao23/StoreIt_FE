@@ -7,7 +7,7 @@ function Footer() {
         <h1 className="">Second Brain</h1>
         <a
           target="_blank"
-          href="https://github.com/manasbhalerao23/Second_brain"
+          href="https://github.com/manasbhalerao23/Second_Brain_FE"
           className="hover:bg-white/10 rounded-full p-1 transition-all duration-200"
         >
           <Github />
