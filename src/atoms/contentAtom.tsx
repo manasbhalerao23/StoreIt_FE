@@ -26,6 +26,7 @@ export const contentAtom = atomFamily({
                     //     withCredentials: true
                     // }
                 );
+                console.log("fetched",response.data);
                 return response.data;
             }
         },
