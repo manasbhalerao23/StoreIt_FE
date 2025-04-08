@@ -26,7 +26,7 @@ export const contentAtom = atomFamily({
                     //     withCredentials: true
                     // }
                 );
-                console.log("fetched",response.data);
+                //console.log("fetched",response.data);
                 return {
                     contents: response.data.content, 
                     username: "Shared User", 
