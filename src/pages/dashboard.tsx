@@ -60,9 +60,12 @@ function Dashboard() {
             </>
           ) : contentsState.state === "hasError" ? (
             <div>error while fetching</div>
-          ): contentsState.contents.contents.length === 0 ? (
+          ): contentsState.state === "hasValue" &&
+          Array.isArray(contentsState.contents?.contents) &&
+          contentsState.contents.contents.length === 0 ? (
             <div>Empty Brain</div>
-          ) : (
+          ) : contentsState.state === "hasValue" &&
+          Array.isArray(contentsState.contents?.contents) ? (
             contentsState.contents?.contents?.map((content: contentdata) => (
               <Card
               key={content.id}
@@ -70,6 +73,10 @@ function Dashboard() {
               shared={params.shareId ? true : false}
               />
             ))
+          ) : (
+            <div>
+              Loading Content ....
+            </div>
           )}
         </div>
       </div>
