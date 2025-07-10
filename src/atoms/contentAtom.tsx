@@ -12,7 +12,9 @@ export const contentAtom = atomFamily({
         key:"contentselector",
         get: (id :string | null) => async() => {
             if(!id){
-                const response = await axios.get(`${import.meta.env.VITE_API_URL}/api/v1/content`,
+                const response = await axios.get(
+                    // `http://localhost:3000/api/v1/content`,
+                    `${import.meta.env.VITE_API_URL}/api/v1/content`,
                     {
                         withCredentials: true
                     }

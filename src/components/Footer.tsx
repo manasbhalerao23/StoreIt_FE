@@ -4,7 +4,7 @@ function Footer() {
   return (
     <footer className="bg-gray-500 text-gray-200 text-sm font-medium">
       <div className="max-w-7xl mx-auto p-5 flex justify-between items-center">
-        <h1 className="">Second Brain</h1>
+        <h1 className="">StoreIt</h1>
         <a
           target="_blank"
           href="https://github.com/manasbhalerao23/Second_Brain_FE"

@@ -10,7 +10,7 @@ function Signup() {
         <div className="flex flex-col justify-center items-center gap-5 w-full md:w-1/3">
           <p className="text-md md:text-xl font-semibold max-w-xs text-center text-gray-300">
           Let’s get your  
-            <span className="text-primary font-bold"> Second Brain </span>
+            <span className="text-primary font-bold"> collection </span>
             up and running.
           </p>
         </div>

@@ -19,7 +19,7 @@ function Navbar() {
             to="/"
             className="text-2xl hover:scale-105 transition-all duration-200"
           >
-            Second Brain
+            StoreIt
           </Link>
         </div>
 
@@ -30,7 +30,7 @@ function Navbar() {
               to="/brain"
               className="hidden md:block bg-primary hover:bg-primary-dark px-4 py-2 rounded-full"
             >
-              Go to brain
+              Go to my collection
             </Link>
           ) : (
             <>
@@ -67,7 +67,7 @@ function Navbar() {
       >
         {localStorage.getItem("isLoggedIn") ? (
           <Link to="/brain" className="hover:text-white">
-            Go to brain
+            Go to my collection
           </Link>
         ) : (
           <>

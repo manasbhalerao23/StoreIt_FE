@@ -29,7 +29,7 @@ function ShareModel() {
                 onClick={() => setIsModelOpen(true)}
             >
                 <Share2 size={16} />
-                Share Brain
+                Share
             </button>
             
             <AnimatePresence>
@@ -49,7 +49,7 @@ function ShareModel() {
                             onClick={(e) => e.stopPropagation()}
                         >
                             <div className="flex w-full justify-between items-center mb-4">
-                                <h1 className="text-xl font-semibold text-white">Share Your Second Brain</h1>
+                                <h1 className="text-xl font-semibold text-white">Share Your Collection</h1>
                                 <button 
                                     className="cursor-pointer hover:bg-white/20 p-2 rounded-full transition-all duration-200" 
                                     onClick={() => setIsModelOpen(false)}
@@ -58,7 +58,7 @@ function ShareModel() {
                                 </button>
                             </div>
                             <p className="text-gray-400 text-sm mb-5">
-                                Share your brain with others to collaborate effortlessly.
+                                Share your collection with others to collaborate effortlessly.
                             </p>
                             <button 
                                 className="cursor-pointer bg-primary hover:bg-primary-dark transition-all duration-200 px-3 py-2 rounded-lg flex gap-3 justify-center items-center w-full text-white font-medium"

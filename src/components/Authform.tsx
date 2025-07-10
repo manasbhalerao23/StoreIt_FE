@@ -25,6 +25,7 @@ function AuthForm({ endpoint }: AuthFormProps) {
     try {
       //console.log(import.meta.env.VITE_API_URL)
       await axios.post(
+        // `http://localhost:3000/api/v1/${endpoint}`,
         `${import.meta.env.VITE_API_URL}/api/v1/${endpoint}`,
         { username: data.username, password: data.password },
         { withCredentials: true }
