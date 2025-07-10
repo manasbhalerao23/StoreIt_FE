@@ -1,50 +1,73 @@
-# React + TypeScript + Vite
+# StoreIt
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This repository contains the frontend application for **StoreIt**, a productivity and knowledge management platform. The frontend is built to provide an intuitive and seamless user experience, integrating with the backend API to manage your notes, tasks, and knowledge efficiently.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- User authentication and authorization
+- Note-taking and organization
+- Task management
+- Tagging and categorization
+- Responsive and modern UI
+- Real-time sync with backend
+- Search and filtering options
 
-## Expanding the ESLint configuration
+## 🏗️ Tech Stack
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **Framework:** (React)
+- **State Management:** (Redux, Context API, etc.)
+- **Styling:** (CSS Modules, Tailwind, Styled Components, etc.)
+- **API Integration:** RESTful API calls to backend
 
-- Configure the top-level `parserOptions` property like this:
+## 🗄️ Backend
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+This frontend communicates with the backend repository:  
+[Second_Brain_BE](https://github.com/manasbhalerao23/StoreIt_BE)
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+Please refer to the backend repo for details on API endpoints, authentication, and data modeling.
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+## 🛠️ Getting Started
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+1. **Clone this repository:**
+   ```bash
+   git clone https://github.com/manasbhalerao23/StoreIt_FE.git
+   cd Second_brain_FE
+   ```
+
+2. **Install dependencies:**
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
+
+3. **Configure environment variables:**
+   - Copy `.env.example` to `.env` and set the necessary variables (such as API endpoint for backend).
+
+4. **Run the application:**
+   ```bash
+   npm start
+   # or
+   yarn start
+   ```
+
+5. **Build for production:**
+   ```bash
+   npm run build
+   # or
+   yarn build
+   ```
+
+## 🧑‍💻 Contributing
+
+Contributions are welcome! Please open an issue or submit a pull request.  
+Make sure to follow the code of conduct and contribution guidelines.
+
+
+## 📫 Contact
+
+For questions, contact [manasbhalerao23](https://github.com/manasbhalerao23).
+
+---
+
+**Backend Repo:** [Second_Brain_BE](https://github.com/manasbhalerao23/StoreIt_BE)
