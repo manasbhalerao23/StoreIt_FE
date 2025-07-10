@@ -1,6 +1,6 @@
-# Second_brain_FE
+# StoreIt
 
-This repository contains the frontend application for **Second Brain**, a productivity and knowledge management platform. The frontend is built to provide an intuitive and seamless user experience, integrating with the backend API to manage your notes, tasks, and knowledge efficiently.
+This repository contains the frontend application for **StoreIt**, a productivity and knowledge management platform. The frontend is built to provide an intuitive and seamless user experience, integrating with the backend API to manage your notes, tasks, and knowledge efficiently.
 
 ## 🚀 Features
 
@@ -22,7 +22,7 @@ This repository contains the frontend application for **Second Brain**, a produc
 ## 🗄️ Backend
 
 This frontend communicates with the backend repository:  
-[Second_Brain_BE](https://github.com/manasbhalerao23/Second_Brain_BE)
+[Second_Brain_BE](https://github.com/manasbhalerao23/StoreIt_BE)
 
 Please refer to the backend repo for details on API endpoints, authentication, and data modeling.
 
@@ -30,7 +30,7 @@ Please refer to the backend repo for details on API endpoints, authentication, a
 
 1. **Clone this repository:**
    ```bash
-   git clone https://github.com/manasbhalerao23/Second_brain_FE.git
+   git clone https://github.com/manasbhalerao23/StoreIt_FE.git
    cd Second_brain_FE
    ```
 
@@ -70,4 +70,4 @@ For questions, contact [manasbhalerao23](https://github.com/manasbhalerao23).
 
 ---
 
-**Backend Repo:** [Second_Brain_BE](https://github.com/manasbhalerao23/Second_Brain_BE)
+**Backend Repo:** [Second_Brain_BE](https://github.com/manasbhalerao23/StoreIt_BE)
